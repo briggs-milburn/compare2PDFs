@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\results.xsl'?>
+<REPORT xml:lang="en-US" OVERALL_RESULT="PASS" VERSION="10.0.17763.132" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="x64" SecureBoot="FALSE" APP_TYPE="Centennial" PUBLISHER_DISPLAY_NAME="CN=5F115F26-EBB3-4B95-A49F-684E81CA8E83" APP_NAME="50261BriggsAMilburn.compare2PDFs" APP_VERSION="1.0.1.0" OSVERSION="10.0.17134.0" OS="Microsoft Windows 10 Pro" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="1033" X64_ONLY="FALSE" VALIDATION_TYPE="UI" ReportGenerationTime="5/6/2019 10:24:32 PM" ID="4a66b1d02ba6de88e774114ccd1c73c1">
+  <REQUIREMENTS>
+    <REQUIREMENT NUMBER="3" TITLE="Digitally signed file test" RATIONALE="An Authenticode digital signature allows users to be sure that the software is genuine. It also allows detection if a file has been tampered with e.g. infected by a virus.">
+      <TEST INDEX="2" NAME="Install signed driver and executable files" DESCRIPTION="Install signed driver and executable files." EXECUTIONTIME="00h:00m:01s.73ms" OPTIONAL="TRUE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="6" TITLE="User account control (UAC) test" RATIONALE="Most applications do not require administrator privileges at run time, and should be just fine running as a standard-user. Windows applications must have a manifest (embedded or external) to define its execution level that tells OS the privileges needed to run the application.">
+      <TEST INDEX="11" NAME="User account control run level" DESCRIPTION="Windows® applications must have a manifest (embedded or external) to define its execution level that tells OS the privileges needed to run the application." EXECUTIONTIME="00h:00m:01s.05ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="12" TITLE="Package compliance test" RATIONALE="The package manifest was missing one or more required attributes.">
+      <TEST INDEX="77" NAME="Application count" DESCRIPTION="One package should not define more than one app in the manifest." EXECUTIONTIME="00h:00m:01s.31ms" OPTIONAL="TRUE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="31" NAME="App manifest" DESCRIPTION="App manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:01s.92ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="87" NAME="File association verbs" DESCRIPTION="Registry validation that no registered file association verbs are installed." EXECUTIONTIME="00h:00m:01s.22ms" OPTIONAL="TRUE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="86" NAME="Registry checks" DESCRIPTION="Registry validation that drivers are not installed and NT Services are not installed." EXECUTIONTIME="00h:00m:01s.10ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="90" NAME="Resource Packages" DESCRIPTION="Check if any resource packages contain PE files." EXECUTIONTIME="00h:00m:01s.24ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="14" TITLE="Windows security features test" RATIONALE="Applications must opt-into Windows security features.">
+      <TEST INDEX="70" NAME="Banned file analyzer" DESCRIPTION="Analysis of application to detect known insecure files" EXECUTIONTIME="00h:00m:01s.31ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="62" NAME="Private code signing" DESCRIPTION="App should not package private code signing key files." EXECUTIONTIME="00h:00m:01s.79ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="15" TITLE="Supported API test" RATIONALE="The application should only refer to the APIs allowed by the Windows SDK for Windows Store Apps.">
+      <TEST INDEX="38" NAME="Supported APIs" DESCRIPTION="Windows Store App must only use supported platform APIs." EXECUTIONTIME="00h:00m:01s.70ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="19" TITLE="App manifest resources tests" RATIONALE="The App Package Manifest should have valid resources defined in the resources.pri file, as per the App Packaging Specification and App Manifest Schema.">
+      <TEST INDEX="45" NAME="App resources" DESCRIPTION="The package should have valid resources defined in the resources.pri file." EXECUTIONTIME="00h:00m:01s.04ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="61" NAME="Branding" DESCRIPTION="App should not use the default images packed by windows SDK samples or Visual Studio." EXECUTIONTIME="00h:00m:02s.65ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="20" TITLE="Debug configuration test" RATIONALE="The App should not install any debug binaries.">
+      <TEST INDEX="46" NAME="Debug configuration" DESCRIPTION="The App should not install any debug binaries." EXECUTIONTIME="00h:00m:02s.14ms" OPTIONAL="TRUE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="23" TITLE="App Capabilities test" RATIONALE="Packages declaring special-use capabilities will have to provide justifications during the onboarding process.">
+      <TEST INDEX="52" NAME="Special use capabilities" DESCRIPTION="Packages declaring special-use capabilities will have to provide justifications during the onboarding process." EXECUTIONTIME="00h:00m:01s.23ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="24" TITLE="Windows Runtime metadata validation" RATIONALE="Metadata needs to be conformant and consistent across all generation sources.">
+      <TEST INDEX="56" NAME="ExclusiveTo attribute" DESCRIPTION="A class must not implement an interface that is marked ExclusiveTo another class." EXECUTIONTIME="00h:00m:08s.92ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="57" NAME="Type location" DESCRIPTION="Types must be defined in the metadata file with the longest matching namespace." EXECUTIONTIME="00h:00m:00s.89ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="55" NAME="Type name case-sensitivity" DESCRIPTION="Namespace and type names must not vary only by casing." EXECUTIONTIME="00h:00m:00s.82ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="54" NAME="Type name correctness" DESCRIPTION="Only system types can be in the Windows namespace and no types can be in the global namespace." EXECUTIONTIME="00h:00m:00s.93ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="58" NAME="General metadata correctness" DESCRIPTION="Metadata files must meet various requirements in order to be valid and correct." EXECUTIONTIME="00h:00m:09s.07ms" OPTIONAL="TRUE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="53" NAME="Properties" DESCRIPTION="Write-only and indexer properties may not be used. Corresponding getter and setter methods must match in type." EXECUTIONTIME="00h:00m:00s.96ms" OPTIONAL="FALSE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="25" TITLE="Package sanity test" RATIONALE="Validation of the app package contents to ensure correctness.">
+      <TEST INDEX="89" NAME="Archive files usage" DESCRIPTION="Packages should not contain PE files inside archive files." EXECUTIONTIME="00h:00m:01s.47ms" OPTIONAL="TRUE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="88" NAME="Blocked executables" DESCRIPTION="Detects if there are references to process launch APIs and blocked executables" EXECUTIONTIME="00h:00m:01s.89ms" OPTIONAL="TRUE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="63" NAME="Platform appropriate files" DESCRIPTION="App should not install files that do not match the target processor architecture." EXECUTIONTIME="00h:00m:01s.49ms" OPTIONAL="TRUE">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+  </REQUIREMENTS>
+  <APPLICATIONS>
+    <Installed_Programs>
+      <Program Name="50261BriggsAMilburn.compare2PDFs" Type="Application" Source="AppxPackage" Publisher="CN=5F115F26-EBB3-4B95-A49F-684E81CA8E83" Version="1.0.1.0" Language="1033" InstallDate="" OSVersionAtInstallTime="10.0.0.17134" RootDirPath="C:\WINDOWS\temp\appcert_4b08\50261xxxxsamilburn.compare2pdfs_1.0.1.0_neutral__x8fyjr42brqe4" Id="0000e709b45f71934e9a857d8180114d855100000904" HiddenArp="false">
+        <Indicators>
+          <WindowsStoreAppManifestIndicators>
+            <PackageManifest PackageFullName="50261BriggsAMilburn.compare2PDFs_1.0.1.0_neutral__x8fyjr42brqe4">
+              <Package>
+                <Identity Name="50261BriggsAMilburn.compare2PDFs" Publisher="CN=5F115F26-EBB3-4B95-A49F-684E81CA8E83" Version="1.0.1.0" ProcessorArchitecture="neutral"></Identity>
+                <Properties>
+                  <DisplayName>compare2PDFs</DisplayName>
+                  <PublisherDisplayName>Briggs A Milburn</PublisherDisplayName>
+                  <Logo>Images\StoreLogo.png</Logo>
+                </Properties>
+                <Dependencies>
+                  <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.14393.0" MaxVersionTested="10.0.17763.0"></TargetDeviceFamily>
+                  <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.14393.0" MaxVersionTested="10.0.17763.0"></TargetDeviceFamily>
+                </Dependencies>
+                <Resources>
+                  <Resource Language="EN-US"></Resource>
+                  <Resource Scale="200"></Resource>
+                </Resources>
+                <Applications>
+                  <Application Id="App" Executable="compare2PDFs\compare2PDFs.exe" EntryPoint="Windows.FullTrustApplication">
+                    <VisualElements DisplayName="compare2PDFs" Description="compare2PDFsPackage" BackgroundColor="transparent" Square150x150Logo="Images\Square150x150Logo.png" Square44x44Logo="Images\Square44x44Logo.png" ForegroundText="light">
+                      <DefaultTile Wide310x150Logo="Images\Wide310x150Logo.png" Square71x71Logo="Images\SmallTile.png" Square310x310Logo="Images\LargeTile.png"></DefaultTile>
+                      <SplashScreen Image="Images\SplashScreen.png"></SplashScreen>
+                    </VisualElements>
+                  </Application>
+                </Applications>
+                <Capabilities>
+                  <Capability Name="internetClient"></Capability>
+                  <Capability Name="runFullTrust"></Capability>
+                </Capabilities>
+              </Package>
+            </PackageManifest>
+            <BundleManifest PackageFamilyName="50261BriggsAMilburn.compare2PDFs_x8fyjr42brqe4">
+              <Bundle SchemaVersion="3.0">
+                <Identity Name="50261BriggsAMilburn.compare2PDFs" Publisher="CN=5F115F26-EBB3-4B95-A49F-684E81CA8E83" Version="1.0.1.0"></Identity>
+                <Packages>
+                  <Package Type="application" Version="1.0.1.0" Architecture="neutral" FileName="compare2PDFsPackage_1.0.1.0_AnyCPU.appx" Offset="69" Size="339564">
+                    <Resources>
+                      <Resource Language="EN-US"></Resource>
+                      <Resource Scale="200"></Resource>
+                    </Resources>
+                  </Package>
+                  <Package Type="resource" Version="1.0.1.0" ResourceId="split.scale-100" FileName="compare2PDFsPackage_1.0.1.0_scale-100.appx" Offset="339729" Size="29292" Architecture="neutral">
+                    <Resources>
+                      <Resource Scale="100"></Resource>
+                    </Resources>
+                  </Package>
+                  <Package Type="resource" Version="1.0.1.0" ResourceId="split.scale-125" FileName="compare2PDFsPackage_1.0.1.0_scale-125.appx" Offset="369117" Size="35927" Architecture="neutral">
+                    <Resources>
+                      <Resource Scale="125"></Resource>
+                    </Resources>
+                  </Package>
+                  <Package Type="resource" Version="1.0.1.0" ResourceId="split.scale-150" FileName="compare2PDFsPackage_1.0.1.0_scale-150.appx" Offset="405140" Size="43776" Architecture="neutral">
+                    <Resources>
+                      <Resource Scale="150"></Resource>
+                    </Resources>
+                  </Package>
+                  <Package Type="resource" Version="1.0.1.0" ResourceId="split.scale-400" FileName="compare2PDFsPackage_1.0.1.0_scale-400.appx" Offset="449012" Size="134039" Architecture="neutral">
+                    <Resources>
+                      <Resource Scale="400"></Resource>
+                    </Resources>
+                  </Package>
+                </Packages>
+              </Bundle>
+            </BundleManifest>
+          </WindowsStoreAppManifestIndicators>
+        </Indicators>
+        <StaticProperties>
+          <Files Id="">
+            <File Id="0000f24d8aeac6a0afc02ea24ad7c19a251d168d93c2" Name="compare2PDFs.exe" ProductName="compare2pdfs" CompanyName="hp inc." ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" Size="57344" SizeOfImage="57344" PeHeaderHash="01019c2b1d1edfe60594c58c5afe264696d95bda5232" PeChecksum="0" CrcChecksum="267981408" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="compare2pdfs" LegalCopyright="copyright © hp inc. 2019" LinkDate="08/17/2082 12:08:40" BinaryType="pe32_clr_il_prefer32" LowerCaseLongPath="C:\WINDOWS\temp\appcert_4b08\50261xxxxsamilburn.compare2pdfs_1.0.1.0_neutral__x8fyjr42brqe4\compare2pdfs\compare2pdfs.exe" />
+            <File Id="000061cf7f691c38b0a98787591873fd833c27b793b5" Name="resources.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" Size="0" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="-1887091836" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="C:\WINDOWS\temp\appcert_4b08\50261xxxxsamilburn.compare2pdfs_1.0.1.0_neutral__x8fyjr42brqe4\resources.pri" />
+          </Files>
+        </StaticProperties>
+      </Program>
+    </Installed_Programs>
+  </APPLICATIONS>
+  <DEPENDENCY_INFORMATION>
+    <AitStaticAnalysis ProgramId="0000da39a3ee5e6b4b0d3255bfef95601890afd80709" AnalysisVersion="1.60" DictionaryVersion="3.4" Type="Max" Id="C:\WINDOWS\temp\appcert_4B08\50261BriggsAMilburn.compare2PDFs_1.0.1.0_neutral__x8fyjr42brqe4">
+      <AitFile FrameworkMoniker=".NETFramework,Version=v4.7.2" ErrorCode="0" Name="compare2PDFs.exe" Id="0000f24d8aeac6a0afc02ea24ad7c19a251d168d93c2">
+        <AitCategory Id="Com">
+          <AitFeature Name="{00000000-0000-0000-0000-000000000021}" />
+        </AitCategory>
+        <AitCategory Id="ApiStatic">
+          <AitFeature Name="mscoree.dll!_CorExeMain" />
+        </AitCategory>
+        <AitCategory Id="DotNet">
+          <AitFeature Name="System.Activator" />
+          <AitFeature Name="System.Activator.CreateInstance" />
+          <AitFeature Name="System.ArgumentException" />
+          <AitFeature Name="System.ArgumentException..ctor" />
+          <AitFeature Name="System.CodeDom.Compiler.GeneratedCodeAttribute" />
+          <AitFeature Name="System.CodeDom.Compiler.GeneratedCodeAttribute..ctor" />
+          <AitFeature Name="System.Collections.Hashtable" />
+          <AitFeature Name="System.Collections.Hashtable..ctor" />
+          <AitFeature Name="System.Collections.Hashtable.Add" />
+          <AitFeature Name="System.Collections.Hashtable.ContainsKey" />
+          <AitFeature Name="System.Collections.Hashtable.Remove" />
+          <AitFeature Name="System.ComponentModel.CancelEventArgs" />
+          <AitFeature Name="System.ComponentModel.CancelEventHandler" />
+          <AitFeature Name="System.ComponentModel.CancelEventHandler..ctor" />
+          <AitFeature Name="System.ComponentModel.Component" />
+          <AitFeature Name="System.ComponentModel.Component.Dispose" />
+          <AitFeature Name="System.ComponentModel.ComponentResourceManager" />
+          <AitFeature Name="System.ComponentModel.ComponentResourceManager..ctor" />
+          <AitFeature Name="System.ComponentModel.Container" />
+          <AitFeature Name="System.ComponentModel.Container..ctor" />
+          <AitFeature Name="System.ComponentModel.Design.HelpKeywordAttribute" />
+          <AitFeature Name="System.ComponentModel.Design.HelpKeywordAttribute..ctor" />
+          <AitFeature Name="System.ComponentModel.EditorBrowsableAttribute" />
+          <AitFeature Name="System.ComponentModel.EditorBrowsableAttribute..ctor" />
+          <AitFeature Name="System.ComponentModel.EditorBrowsableState" />
+          <AitFeature Name="System.ComponentModel.IContainer" />
+          <AitFeature Name="System.ComponentModel.ISupportInitialize" />
+          <AitFeature Name="System.ComponentModel.ISupportInitialize.BeginInit" />
+          <AitFeature Name="System.ComponentModel.ISupportInitialize.EndInit" />
+          <AitFeature Name="System.Configuration.ApplicationSettingsBase" />
+          <AitFeature Name="System.Configuration.ApplicationSettingsBase..ctor" />
+          <AitFeature Name="System.Configuration.ApplicationSettingsBase.Save" />
+          <AitFeature Name="System.Configuration.SettingsBase" />
+          <AitFeature Name="System.Configuration.SettingsBase.Synchronized" />
+          <AitFeature Name="System.Diagnostics.DebuggableAttribute" />
+          <AitFeature Name="System.Diagnostics.DebuggableAttribute..ctor" />
+          <AitFeature Name="System.Diagnostics.DebuggerHiddenAttribute" />
+          <AitFeature Name="System.Diagnostics.DebuggerHiddenAttribute..ctor" />
+          <AitFeature Name="System.Diagnostics.DebuggerNonUserCodeAttribute" />
+          <AitFeature Name="System.Diagnostics.DebuggerNonUserCodeAttribute..ctor" />
+          <AitFeature Name="System.Diagnostics.DebuggerStepThroughAttribute" />
+          <AitFeature Name="System.Diagnostics.DebuggerStepThroughAttribute..ctor" />
+          <AitFeature Name="System.Drawing.ContentAlignment" />
+          <AitFeature Name="System.Drawing.Font" />
+          <AitFeature Name="System.Drawing.Font..ctor" />
+          <AitFeature Name="System.Drawing.FontStyle" />
+          <AitFeature Name="System.Drawing.GraphicsUnit" />
+          <AitFeature Name="System.Drawing.Icon" />
+          <AitFeature Name="System.Drawing.Point" />
+          <AitFeature Name="System.Drawing.Point..ctor" />
+          <AitFeature Name="System.Drawing.Size" />
+          <AitFeature Name="System.Drawing.Size..ctor" />
+          <AitFeature Name="System.Drawing.SizeF" />
+          <AitFeature Name="System.Drawing.SizeF..ctor" />
+          <AitFeature Name="System.EventArgs" />
+          <AitFeature Name="System.EventHandler" />
+          <AitFeature Name="System.EventHandler..ctor" />
+          <AitFeature Name="System.Exception" />
+          <AitFeature Name="System.Exception.get_InnerException" />
+          <AitFeature Name="System.Exception.get_Message" />
+          <AitFeature Name="System.Globalization.CultureInfo" />
+          <AitFeature Name="System.IDisposable" />
+          <AitFeature Name="System.IDisposable.Dispose" />
+          <AitFeature Name="System.InvalidOperationException" />
+          <AitFeature Name="System.InvalidOperationException..ctor" />
+          <AitFeature Name="System.Object" />
+          <AitFeature Name="System.Object..ctor" />
+          <AitFeature Name="System.Object.Equals" />
+          <AitFeature Name="System.Object.GetHashCode" />
+          <AitFeature Name="System.Object.ReferenceEquals" />
+          <AitFeature Name="System.Object.ToString" />
+          <AitFeature Name="System.Reflection.Assembly" />
+          <AitFeature Name="System.Reflection.AssemblyCompanyAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyCompanyAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyCopyrightAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyCopyrightAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyDescriptionAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyDescriptionAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyFileVersionAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyFileVersionAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyProductAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyProductAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyTitleAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyTitleAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyTrademarkAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyTrademarkAttribute..ctor" />
+          <AitFeature Name="System.Reflection.TargetInvocationException" />
+          <AitFeature Name="System.Resources.ResourceManager" />
+          <AitFeature Name="System.Resources.ResourceManager..ctor" />
+          <AitFeature Name="System.Resources.ResourceManager.GetObject" />
+          <AitFeature Name="System.Runtime.CompilerServices.AccessedThroughPropertyAttribute" />
+          <AitFeature Name="System.Runtime.CompilerServices.AccessedThroughPropertyAttribute..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilationRelaxationsAttribute" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilationRelaxationsAttribute..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilerGeneratedAttribute" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilerGeneratedAttribute..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute" />
+          <AitFeature Name="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.RuntimeHelpers" />
+          <AitFeature Name="System.Runtime.CompilerServices.RuntimeHelpers.GetObjectValue" />
+          <AitFeature Name="System.Runtime.InteropServices.ComVisibleAttribute" />
+          <AitFeature Name="System.Runtime.InteropServices.ComVisibleAttribute..ctor" />
+          <AitFeature Name="System.Runtime.InteropServices.GuidAttribute" />
+          <AitFeature Name="System.Runtime.InteropServices.GuidAttribute..ctor" />
+          <AitFeature Name="System.Runtime.Versioning.TargetFrameworkAttribute" />
+          <AitFeature Name="System.Runtime.Versioning.TargetFrameworkAttribute..ctor" />
+          <AitFeature Name="System.RuntimeTypeHandle" />
+          <AitFeature Name="System.STAThreadAttribute" />
+          <AitFeature Name="System.STAThreadAttribute..ctor" />
+          <AitFeature Name="System.String" />
+          <AitFeature Name="System.ThreadStaticAttribute" />
+          <AitFeature Name="System.ThreadStaticAttribute..ctor" />
+          <AitFeature Name="System.Threading.Monitor" />
+          <AitFeature Name="System.Threading.Monitor.Enter" />
+          <AitFeature Name="System.Threading.Monitor.Exit" />
+          <AitFeature Name="System.Type" />
+          <AitFeature Name="System.Type.GetTypeFromHandle" />
+          <AitFeature Name="System.Type.get_Assembly" />
+          <AitFeature Name="System.Windows.Forms.Application" />
+          <AitFeature Name="System.Windows.Forms.Application.SetCompatibleTextRenderingDefault" />
+          <AitFeature Name="System.Windows.Forms.AutoScaleMode" />
+          <AitFeature Name="System.Windows.Forms.AutoSizeMode" />
+          <AitFeature Name="System.Windows.Forms.AxHost" />
+          <AitFeature Name="System.Windows.Forms.AxHost.set_Enabled" />
+          <AitFeature Name="System.Windows.Forms.AxHost.set_OcxState" />
+          <AitFeature Name="System.Windows.Forms.Button" />
+          <AitFeature Name="System.Windows.Forms.Button..ctor" />
+          <AitFeature Name="System.Windows.Forms.ButtonBase" />
+          <AitFeature Name="System.Windows.Forms.ButtonBase.set_Text" />
+          <AitFeature Name="System.Windows.Forms.ButtonBase.set_UseVisualStyleBackColor" />
+          <AitFeature Name="System.Windows.Forms.ColumnStyle" />
+          <AitFeature Name="System.Windows.Forms.ColumnStyle..ctor" />
+          <AitFeature Name="System.Windows.Forms.ColumnStyle.get_Width" />
+          <AitFeature Name="System.Windows.Forms.ColumnStyle.set_Width" />
+          <AitFeature Name="System.Windows.Forms.CommonDialog" />
+          <AitFeature Name="System.Windows.Forms.CommonDialog.ShowDialog" />
+          <AitFeature Name="System.Windows.Forms.ContainerControl" />
+          <AitFeature Name="System.Windows.Forms.ContainerControl.set_AutoScaleDimensions" />
+          <AitFeature Name="System.Windows.Forms.ContainerControl.set_AutoScaleMode" />
+          <AitFeature Name="System.Windows.Forms.ContextMenuStrip" />
+          <AitFeature Name="System.Windows.Forms.ContextMenuStrip..ctor" />
+          <AitFeature Name="System.Windows.Forms.Control" />
+          <AitFeature Name="System.Windows.Forms.Control.PerformLayout" />
+          <AitFeature Name="System.Windows.Forms.Control.ResumeLayout" />
+          <AitFeature Name="System.Windows.Forms.Control.SuspendLayout" />
+          <AitFeature Name="System.Windows.Forms.Control.add_Click" />
+          <AitFeature Name="System.Windows.Forms.Control.get_Controls" />
+          <AitFeature Name="System.Windows.Forms.Control.get_IsDisposed" />
+          <AitFeature Name="System.Windows.Forms.Control.remove_Click" />
+          <AitFeature Name="System.Windows.Forms.Control.set_AllowDrop" />
+          <AitFeature Name="System.Windows.Forms.Control.set_CausesValidation" />
+          <AitFeature Name="System.Windows.Forms.Control.set_ContextMenuStrip" />
+          <AitFeature Name="System.Windows.Forms.Control.set_Dock" />
+          <AitFeature Name="System.Windows.Forms.Control.set_Font" />
+          <AitFeature Name="System.Windows.Forms.Control.set_Location" />
+          <AitFeature Name="System.Windows.Forms.Control.set_Name" />
+          <AitFeature Name="System.Windows.Forms.Control.set_Size" />
+          <AitFeature Name="System.Windows.Forms.Control.set_TabIndex" />
+          <AitFeature Name="System.Windows.Forms.Control.set_Text" />
+          <AitFeature Name="System.Windows.Forms.DialogResult" />
+          <AitFeature Name="System.Windows.Forms.DockStyle" />
+          <AitFeature Name="System.Windows.Forms.FileDialog" />
+          <AitFeature Name="System.Windows.Forms.FileDialog.add_FileOk" />
+          <AitFeature Name="System.Windows.Forms.FileDialog.get_FileName" />
+          <AitFeature Name="System.Windows.Forms.FileDialog.remove_FileOk" />
+          <AitFeature Name="System.Windows.Forms.FileDialog.set_FileName" />
+          <AitFeature Name="System.Windows.Forms.FileDialog.set_Filter" />
+          <AitFeature Name="System.Windows.Forms.FileDialog.set_Title" />
+          <AitFeature Name="System.Windows.Forms.FlowDirection" />
+          <AitFeature Name="System.Windows.Forms.FlowLayoutPanel" />
+          <AitFeature Name="System.Windows.Forms.FlowLayoutPanel..ctor" />
+          <AitFeature Name="System.Windows.Forms.FlowLayoutPanel.set_FlowDirection" />
+          <AitFeature Name="System.Windows.Forms.Form" />
+          <AitFeature Name="System.Windows.Forms.Form..ctor" />
+          <AitFeature Name="System.Windows.Forms.Form.Close" />
+          <AitFeature Name="System.Windows.Forms.Form.Dispose" />
+          <AitFeature Name="System.Windows.Forms.Form.set_AutoSize" />
+          <AitFeature Name="System.Windows.Forms.Form.set_ClientSize" />
+          <AitFeature Name="System.Windows.Forms.Form.set_Icon" />
+          <AitFeature Name="System.Windows.Forms.Form.set_Text" />
+          <AitFeature Name="System.Windows.Forms.Label" />
+          <AitFeature Name="System.Windows.Forms.Label..ctor" />
+          <AitFeature Name="System.Windows.Forms.Label.set_AutoSize" />
+          <AitFeature Name="System.Windows.Forms.Label.set_Text" />
+          <AitFeature Name="System.Windows.Forms.Label.set_TextAlign" />
+          <AitFeature Name="System.Windows.Forms.MenuStrip" />
+          <AitFeature Name="System.Windows.Forms.MenuStrip..ctor" />
+          <AitFeature Name="System.Windows.Forms.OpenFileDialog" />
+          <AitFeature Name="System.Windows.Forms.OpenFileDialog..ctor" />
+          <AitFeature Name="System.Windows.Forms.Orientation" />
+          <AitFeature Name="System.Windows.Forms.Panel" />
+          <AitFeature Name="System.Windows.Forms.Panel.set_AutoSize" />
+          <AitFeature Name="System.Windows.Forms.Panel.set_AutoSizeMode" />
+          <AitFeature Name="System.Windows.Forms.RowStyle" />
+          <AitFeature Name="System.Windows.Forms.RowStyle..ctor" />
+          <AitFeature Name="System.Windows.Forms.ScrollableControl" />
+          <AitFeature Name="System.Windows.Forms.ScrollableControl.set_AutoScroll" />
+          <AitFeature Name="System.Windows.Forms.SizeType" />
+          <AitFeature Name="System.Windows.Forms.SplitContainer" />
+          <AitFeature Name="System.Windows.Forms.SplitContainer..ctor" />
+          <AitFeature Name="System.Windows.Forms.SplitContainer.get_Panel1" />
+          <AitFeature Name="System.Windows.Forms.SplitContainer.get_Panel2" />
+          <AitFeature Name="System.Windows.Forms.SplitContainer.set_Dock" />
+          <AitFeature Name="System.Windows.Forms.SplitContainer.set_Orientation" />
+          <AitFeature Name="System.Windows.Forms.SplitContainer.set_SplitterDistance" />
+          <AitFeature Name="System.Windows.Forms.SplitterPanel" />
+          <AitFeature Name="System.Windows.Forms.TableLayoutColumnStyleCollection" />
+          <AitFeature Name="System.Windows.Forms.TableLayoutColumnStyleCollection.Add" />
+          <AitFeature Name="System.Windows.Forms.TableLayoutColumnStyleCollection.get_Item" />
+          <AitFeature Name="System.Windows.Forms.TableLayoutControlCollection" />
+          <AitFeature Name="System.Windows.Forms.TableLayoutControlCollection.Add" />
+          <AitFeature Name="System.Windows.Forms.TableLayoutPanel" />
+          <AitFeature Name="System.Windows.Forms.TableLayoutPanel..ctor" />
+          <AitFeature Name="System.Windows.Forms.TableLayoutPanel.get_ColumnStyles" />
+          <AitFeature Name="System.Windows.Forms.TableLayoutPanel.get_Controls" />
+          <AitFeature Name="System.Windows.Forms.TableLayoutPanel.get_RowStyles" />
+          <AitFeature Name="System.Windows.Forms.TableLayoutPanel.set_ColumnCount" />
+          <AitFeature Name="System.Windows.Forms.TableLayoutPanel.set_RowCount" />
+          <AitFeature Name="System.Windows.Forms.TableLayoutRowStyleCollection" />
+          <AitFeature Name="System.Windows.Forms.TableLayoutRowStyleCollection.Add" />
+          <AitFeature Name="System.Windows.Forms.ToolStrip" />
+          <AitFeature Name="System.Windows.Forms.ToolStrip.get_Items" />
+          <AitFeature Name="System.Windows.Forms.ToolStrip.set_Dock" />
+          <AitFeature Name="System.Windows.Forms.ToolStrip.set_RenderMode" />
+          <AitFeature Name="System.Windows.Forms.ToolStripContainer" />
+          <AitFeature Name="System.Windows.Forms.ToolStripContainer..ctor" />
+          <AitFeature Name="System.Windows.Forms.ToolStripContainer.get_ContentPanel" />
+          <AitFeature Name="System.Windows.Forms.ToolStripContainer.get_TopToolStripPanel" />
+          <AitFeature Name="System.Windows.Forms.ToolStripContainer.set_BottomToolStripPanelVisible" />
+          <AitFeature Name="System.Windows.Forms.ToolStripContainer.set_LeftToolStripPanelVisible" />
+          <AitFeature Name="System.Windows.Forms.ToolStripContainer.set_RightToolStripPanelVisible" />
+          <AitFeature Name="System.Windows.Forms.ToolStripContentPanel" />
+          <AitFeature Name="System.Windows.Forms.ToolStripContentPanel.set_AutoScroll" />
+          <AitFeature Name="System.Windows.Forms.ToolStripDropDownItem" />
+          <AitFeature Name="System.Windows.Forms.ToolStripDropDownItem.get_DropDownItems" />
+          <AitFeature Name="System.Windows.Forms.ToolStripItem" />
+          <AitFeature Name="System.Windows.Forms.ToolStripItem.PerformClick" />
+          <AitFeature Name="System.Windows.Forms.ToolStripItem.add_Click" />
+          <AitFeature Name="System.Windows.Forms.ToolStripItem.remove_Click" />
+          <AitFeature Name="System.Windows.Forms.ToolStripItem.set_Name" />
+          <AitFeature Name="System.Windows.Forms.ToolStripItem.set_Size" />
+          <AitFeature Name="System.Windows.Forms.ToolStripItem.set_Text" />
+          <AitFeature Name="System.Windows.Forms.ToolStripItem.set_Visible" />
+          <AitFeature Name="System.Windows.Forms.ToolStripItemCollection" />
+          <AitFeature Name="System.Windows.Forms.ToolStripItemCollection.AddRange" />
+          <AitFeature Name="System.Windows.Forms.ToolStripMenuItem" />
+          <AitFeature Name="System.Windows.Forms.ToolStripMenuItem..ctor" />
+          <AitFeature Name="System.Windows.Forms.ToolStripMenuItem.set_CheckOnClick" />
+          <AitFeature Name="System.Windows.Forms.ToolStripPanel" />
+          <AitFeature Name="System.Windows.Forms.ToolStripRenderMode" />
+        </AitCategory>
+      </AitFile>
+    </AitStaticAnalysis>
+  </DEPENDENCY_INFORMATION>
+</REPORT>

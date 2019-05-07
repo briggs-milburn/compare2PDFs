@@ -1,0 +1,11 @@
+C:\Users\Briggs Milburn\Desktop\testProjects\compare2PDFsPackage\Images\SplashScreen.scale-200.png
+C:\Users\Briggs Milburn\Desktop\testProjects\compare2PDFsPackage\Images\LockScreenLogo.scale-200.png
+C:\Users\Briggs Milburn\Desktop\testProjects\compare2PDFsPackage\Images\Square150x150Logo.scale-200.png
+C:\Users\Briggs Milburn\Desktop\testProjects\compare2PDFsPackage\Images\Square44x44Logo.scale-200.png
+C:\Users\Briggs Milburn\Desktop\testProjects\compare2PDFsPackage\Images\Square44x44Logo.targetsize-24_altform-unplated.png
+C:\Users\Briggs Milburn\Desktop\testProjects\compare2PDFsPackage\Images\StoreLogo.png
+C:\Users\Briggs Milburn\Desktop\testProjects\compare2PDFsPackage\Images\Wide310x150Logo.scale-200.png
+C:\Users\Briggs Milburn\Desktop\testProjects\compare2PDFsPackage\bin\AnyCPU\Debug\resources.pri
+C:\Users\Briggs Milburn\Desktop\testProjects\WindowsFormAppExample1\bin\Debug\compare2PDFs.exe
+C:\Users\Briggs Milburn\Desktop\testProjects\WindowsFormAppExample1\bin\Debug\compare2PDFs.exe.config
+C:\Users\Briggs Milburn\Desktop\testProjects\WindowsFormAppExample1\bin\Debug\compare2PDFs.pdb
